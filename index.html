@@ -17,7 +17,7 @@ button{padding:10px 20px;font-size:16px}
 <script>
 const repo = "username/repo";
 const branch = "main";
-const folder = "media"; // thư mục chứa ảnh/video
+const folder = "general", "images assets"; // thư mục chứa ảnh/video
 async function loadFiles(){
 let api = `https://api.github.com/repos/${repo}/contents/${folder}?ref=${branch}`;
 let res = await fetch(api);
